@@ -40,7 +40,7 @@ export class HomeComponent implements OnInit {
     }
     else
     {
-      console.log("tu chutiya h");
+      console.log("Invalid Credentials");
     }
     
   }
