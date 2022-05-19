@@ -1,0 +1,36 @@
+<div class="container" style="margin-top:20px; width:auto; font-family: Helvetica, sans-serif;">
+  <table class="table">
+    <thead>
+      <tr>
+       <!-- <th scope="col">Product ID</th>-->
+        <th scope="col">Product Name</th>
+        <th scope="col" style="text-align:center">Category ID</th>
+        <th scope="col" style="text-align:center">Price</th>
+        <th scope="col" style="text-align:center">Quantity Available</th>
+        <th scope="col" style="text-align:center">Product Actions</th>
+
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let product of products | paginate:{id:'listing_pagination',itemsPerPage:6,currentPage:page}">
+       <!-- <th scope="row">{{user.ProductId}}</th>
+
+        | async
+          *ngFor="let pagii of paginate | paginate:{id:'listing_pagination',itemsPerPage:6,currentPage:page} "
+      -->
+        <td>{{product.ProductName}}</td>
+        <td style="text-align:center">{{product.CategoryId}}</td>
+        <td style="text-align:center">&#8377;{{product.Price}}</td>
+        <td style="text-align:center">{{product.QuantityAvailable}}</td>
+        <td style="text-align:center"><button type="button" class="btn btn-outline-primary" (click)="getProductDetails(product.ProductId)">Details</button></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div>
+		<pagination-controls  id="listing_pagination" (pageChange)="page = $event"></pagination-controls>
+	</div> 
+  
+</div>
+<!--,totalItems:totalrecords     maxSize="5" directionLinks=true-->
+    

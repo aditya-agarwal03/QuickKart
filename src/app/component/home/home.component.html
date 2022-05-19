@@ -1,0 +1,19 @@
+
+<section id="content">
+<form>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>Welcome to QuickKart</h1>
+                <input type="email" class="form-control" placeholder="Enter email" name="email" #email>
+                <br>
+                <input type="password" class="form-control" placeholder="Enter password" name="password" #password>
+                <br>
+                <input type="submit" class="btn btn-dark" value="Login" (click)="validate(email.value,password.value)">
+            </div>
+        </div>
+    </div>
+</form>
+</section>
+<!-- routerLink="ProductList"
+<a class="hero-btn" (click)="validateUser(document.getElementById('email').value)">Check Our Products</a> -->

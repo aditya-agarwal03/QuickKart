@@ -1,0 +1,56 @@
+#productdetail
+{
+    background-color: aqua;
+    font-family: Helvetica, sans-serif;
+    text-align: center;
+    font-size: 200%;
+}
+
+.container-fluid
+{
+    padding: 13% 15% 35% 15%;
+    /*top-right-bottom-left*/
+    
+}
+
+
+.hero-btn-update
+{
+    display: inline-block;
+    text-decoration: none;
+    color:#fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+.hero-btn-delete
+{
+    display: inline-block;
+    text-decoration: none;
+    color:#fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: black;
+    position: relative;
+    cursor: pointer;
+}
+
+
+.hero-btn-update:hover
+{
+    border: 1px solid black;
+    background: black;
+    transition: 2s;
+}
+
+.hero-btn-delete:hover
+{
+    border: 1px solid white;
+    background: transparent;
+    transition: 0.5s;
+}
